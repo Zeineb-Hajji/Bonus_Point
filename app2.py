@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans, AgglomerativeClustering
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.metrics import r2_score
-
+import matplotlib
 # Page configuration
 st.set_page_config(page_title="ClusterLab - Multi-Perspective", layout="wide")
 
@@ -190,3 +190,4 @@ if st.sidebar.button("Run Clustering"):
 else:
     st.info("Adjust the parameters in the sidebar and click 'Run Clustering' to begin.")
     st.image("https://raw.githubusercontent.com/streamlit/docs/main/public/images/tutorials/visualizing-data.png", caption="Visualization Example")
+
